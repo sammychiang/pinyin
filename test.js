@@ -1,6 +1,6 @@
 const pinyin = require('./index');
 
-var strings = ["朋友们"];
+var strings = ["椅子"];
 
 strings.map((string) => {
     console.log(pinyin(string, {word: true}));
