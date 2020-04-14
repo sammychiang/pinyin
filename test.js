@@ -1,7 +1,9 @@
-const pinyin = require('./index');
+var pinyin = require('./index');
 
-var strings = ["四块儿"];
+var strings = ["不客气"];
 
-strings.map((string) => {
-    console.log(pinyin(string, {word: true}));
+strings.forEach((string) => {
+    console.log(pinyin(string, {
+        segment: true
+    }));
 });
